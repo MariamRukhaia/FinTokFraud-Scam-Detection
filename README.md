@@ -4,9 +4,9 @@ An interpretable **NLP-based scam detection system** that analyzes linguistic pa
 
 The project analyzes **400 manually labeled TikTok posts** across **financial, health, and lifestyle** content using captions, hashtags, and top comments.
 
-## 🔍 What We Built
+## 🔍 What I Built
 
-We developed a **weighted keyword classifier** that identifies linguistic signals commonly associated with scam content, including:
+I developed a **weighted keyword classifier** that identifies linguistic signals commonly associated with scam content, including:
 
 - Recruitment language
 - Supplement and health deception
@@ -15,9 +15,9 @@ We developed a **weighted keyword classifier** that identifies linguistic signal
 - Credibility and proof claims
 - Risk-hiding language
 
-Each detected signal contributes to a weighted scam score. We tested multiple classification thresholds to study the tradeoff between catching more scams and incorrectly flagging legitimate content.
+Each detected signal contributes to a weighted scam score. I tested multiple classification thresholds to study the tradeoff between catching more scams and incorrectly flagging legitimate content.
 
-We also implemented a **TF-IDF + Logistic Regression** model as a machine-learning baseline for comparison.
+I also implemented a **TF-IDF + Logistic Regression** model as a machine-learning baseline for comparison.
 
 ## 📊 Results
 
@@ -43,19 +43,19 @@ The classifier detected approximately **73% of scam posts** at the selected thre
 ## 🧪 Methodology
 
 **1. Data Collection**  
-Collected 400 TikTok posts across financial, health, and lifestyle categories.
+I collected 400 TikTok posts across financial, health, and lifestyle categories.
 
 **2. Manual Labeling**  
-Posts were manually classified as scam or legitimate. A subset was independently reviewed by a second annotator to measure agreement.
+I manually classified posts as scam or legitimate. A subset was independently reviewed by a second annotator to measure agreement.
 
 **3. Text Processing**  
-Captions, hashtags, and top comments were combined into a single text representation.
+I combined captions, hashtags, and top comments into a single text representation.
 
 **4. Classification**  
-Posts were scored using a weighted lexicon of scam-related linguistic patterns.
+I scored posts using a weighted lexicon of scam-related linguistic patterns.
 
 **5. Evaluation**  
-Performance was evaluated using precision, recall, F1 score, confusion matrices, threshold testing, error analysis, and Cohen's Kappa.
+I evaluated performance using precision, recall, F1 score, confusion matrices, threshold testing, error analysis, and Cohen's Kappa.
 
 ## 🛠️ Technologies
 
@@ -67,10 +67,8 @@ Scammers frequently reuse ordinary marketing language, meaning linguistic patter
 
 Future work could incorporate **images, video, audio, account behavior, external links, and larger datasets** to develop a multimodal detection system.
 
-## 📄 Project Presentation
 
-[View the FinTokFraud presentation](docs/FinTokFraud-Presentation.pdf)
+## 👤 Author
 
-## 👥 Author
-Mariam Rukhaia 
+**Mariam Rukhaia**  
 NYU Tandon School of Engineering
