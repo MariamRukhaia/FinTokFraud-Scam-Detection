@@ -465,10 +465,6 @@ def run_tfidf_logistic_regression(combined: pd.DataFrame):
     print("\nTF-IDF + Logistic Regression Results")
     print(classification_report(y_test, y_pred, target_names=["Legit", "Scam"], zero_division=0))
 
-
-import pandas as pd
-from sklearn.metrics import cohen_kappa_score
-
 def compute_kappa_from_file():
     df = pd.read_csv("Cohen's Kappa.csv")  
     df["Scam_clean"] = df["Scam?"].astype(str).str.strip().str.lower()
@@ -547,5 +543,6 @@ def main():
 
     print(f"\nDone!")
 
-main()
+if __name__ == "__main__":
+    main()
 
